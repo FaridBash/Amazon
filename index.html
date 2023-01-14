@@ -16,10 +16,11 @@
             <!-- LEFT NAVBAR -->
             <nav class="left-navbar">
                 <ul>
+                    <li class="small-screen"><i class="fa-solid fa-bars"></i></li>
                     <li class="white-hover"><img src="./img/amazon-logo-png_167642.png" alt="white logo" class="white-logo "></li>
                     <li class="deliver white-hover">
-                        <img src="./img/you-are-here-icon-5.jpg" alt="location" class="location">
-                        <div id="israel">
+                        <img src="./img/you-are-here-icon-5.jpg" alt="location" class="location big-screen">
+                        <div id="israel" class="big-screen">
                             <p>Deliver to</p>
                             <h3>Israel</h3>
                         </div>
@@ -29,9 +30,11 @@
             <!-- END OF LEFT NAVBAR -->
             <!-- MID NAVBAR -->
             <nav class="mid-navbar">
-                <button>All</button>
-                <input type="text" id="search-text">
-                <button id="search"><i class="fa-solid fa-magnifying-glass" ></i></button>
+                <div id="search-bar">
+                    <button class="big-screen">All</button>
+                    <input type="text" id="search-text">
+                    <button id="search"><i class="fa-solid fa-magnifying-glass" ></i></button>
+                </div>
             </nav>
             
             <!-- END OF RIGHT NAVBAR -->
@@ -40,17 +43,19 @@
 
                 <ul>
                     <li id="lang" class="white-hover">
-                        <img src="./img/en.png" alt="" id="en">
-                        <h3>EN</h3>
+                        <img src="./img/en.png" alt="" id="en" class="big-screen">
+                        <h3 class="big-screen">EN</h3>
                     </li>
                     <li id="sign-in" class="white-hover">
-                        <p>Hello, sign in</p>
-                        <h3>Account & Lists</h3>
+                        <p class="big-screen">Hello, sign in</p>
+                        <h3 class="big-screen">Account & Lists</h3>
                     </li>
                     <li id="returns" class="white-hover">
-                        <p>Returns</p>
-                        <h3>& Orders</h3>
+                        <p class="big-screen">Returns</p>
+                        <h3 class="big-screen">& Orders</h3>
                     </li>
+                    <li class="small-screen"><h3>Sign in ></h3></li>
+                    <li class="small-screen"><i class="fa-regular fa-user"></i></li>
                     <li id="cart0" class="white-hover">
                         <h4>0</h4>
                         <div id="cart">
@@ -64,7 +69,7 @@
         </nav>
 
         <!-- SECOND NAVBAR -->
-        <nav class="second-nav">
+        <nav class="second-nav big-screen">
             <ul>
                 <li id="all" class="white-hover">=All</li>
                 <li class="white-hover">Today's Deal</li>
@@ -78,7 +83,7 @@
         <!-- SECOND NAVBAR FINISHED-->
 
         <!-- THIRD NAVBAR -->
-        <nav class="third-nav">
+        <nav class="third-nav big-screen">
             <ul>
                 <li>Books</li>
                 <li>Adanced Search</li>
@@ -93,19 +98,64 @@
         </nav>
 
         <!-- FOURTH NAVBAR -->
-        <!-- <nav class="fourth-nav">
-            <i></i>
-            <p></p>
-            <div>stars</div>
-            <h2>price</h2>
-            <i></i>
-            <img src="" alt="">
-
-        </nav> -->
+        <nav class="fourth-nav small-screen">
+            <i class="fa-solid fa-location-dot"></i>
+                <div id="israel">
+                    <p>Deliver to Israel</p>
+                    
+                </div>
+        </nav>
 
     </header>
 
     <main>
+
+        <!-- SLIDERRRRRR -->
+        <div class="slideshow-container small-screen" >
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="./img/product/1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="./img/product/2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="./img/product/3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="./img/product/4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="./img/product/5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="./img/product/5.jpg" style="width:100%">
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span> 
+              </div>
+
+        <!-- SLIDERRRRRR FINISH-->
+
+
         <section class="product">
             <section class="image-col">
                 <img src="./img/product/1.jpg" alt="1" class="img-icon">
@@ -117,16 +167,16 @@
             </section>
 
             <section class="image-display">
-                <img src="./img/product/1.jpg" alt="" class="img-display">
+                <img src="./img/product/1.jpg" alt="" class="img-display big-screen">
 
             </section>
             <section class="product-info">
                 <h3>Workout Log Gym - 6 x 8 Inches - Gym, Fitness, 
                     and Training Diary - Set Goals, Track 100 
                     Workouts and Record Progress</h3>
-                <a href="#">Visit the Workout Log Gym Store</a>
+                <a href="#" class="linka">Visit the Workout Log Gym Store</a>
                 <div id="rating">
-                    <a href="#"> 1777 ratings</a>
+                    <a href="#" class="linka"> 1777 ratings</a>
                 </div>
                 <hr>
                 <div id="price">
@@ -286,8 +336,7 @@
                 <img src="./img/product/featured/f1.jpg" alt="1" class="image">
                 <br>
                 <a href="#">UtyTrees Undated Daily Planner: 5.7"x8.5" 144 
-                    Pages, Daily To Do List Notebook, Daily Journal with Meals Planner, 
-                    Office Organization Unisex Planners, Black</a>
+                    Pages, Daily To Do List Notebook...</a>
                 <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
                 <p>Get it as soon as <b> Monday, Jan 30 </b></p>
                 <p>FREE Shipping on orders over $49 shipped by Amazon</p>
@@ -307,8 +356,7 @@
                 <img src="./img/product/featured/f3.jpg" alt="1" class="image">
                 <br>
                 <a href="#">Undated Daily Planner - A5 Undated Planner Hourly 
-                    Planner To Do List Notebook Spiral Appointment Planner, PVC 
-                    Hardcover, Elastic Closure, Inner Pocket, 8.2” x 5.9”, Pink</a>
+                    Planner To Do List Notebook...</a>
                 <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
                 <p>Get it as soon as <b> Monday, Jan 30 </b></p>
                 <p>FREE Shipping on orders over $49 shipped by Amazon</p>
@@ -319,8 +367,7 @@
                 <img src="./img/product/featured/f4.jpg" alt="1" class="image">
                 <br>
                 <a href="#">EPEWIZD Fitness Journal Hardcover 6- Month Workout 
-                    Planner Undated Workout Log Book Home Gym 
-                    Accessories for Women and Man(Green)</a>
+                    Planner Undated Workout...</a>
                 <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
                 <p>Get it as soon as <b> Monday, Jan 30 </b></p>
                 <p>FREE Shipping on orders over $49 shipped by Amazon</p>
@@ -340,84 +387,76 @@
             <section class="box">
                 <img src="./img/product/featured/f6.jpg" alt="1" class="image">
                 <br>
-                <a href="#">Hardcover Fitness Journal Workout Planner for Men & Women - 
-                    A5 Sturdy Workout Log Book to Track Gym & Home Workouts</a>
+                <a href="#">Hardcover Fitness Journal Workout Planner for Men &...</a>
                 <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
                 <p>Get it as soon as <b> Monday, Jan 30 </b></p>
                 <p>FREE Shipping on orders over $49 shipped by Amazon</p>
             </section>
-            
-
-            
         </section>
 
         <section class="featured">
             <h1>Featured items you may like</h1>
-            <!-- BOX 1 -->
-            <section class="box">
-                <img src="./img/product/featured/f1.jpg" alt="1" class="image">
-                <br>
-                <a href="#">UtyTrees Undated Daily Planner: 5.7"x8.5" 144 
-                    Pages, Daily To Do List Notebook, Daily Journal with Meals Planner, 
-                    Office Organization Unisex Planners, Black</a>
-                <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
-                <p>Get it as soon as <b> Monday, Jan 30 </b></p>
-                <p>FREE Shipping on orders over $49 shipped by Amazon</p>
-            </section>
-            <!-- BOX 2 -->
-            <section class="box">
-                <img src="./img/product/featured/f2.jpg" alt="1" class="image">
-                <br>
-                <a href="#">Fitness Tracker Journal for Women, Pink Workout 
-                    Notebook (6 x 8 Inches)</a>
-                <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
-                <p>Get it as soon as <b> Monday, Jan 30 </b></p>
-                <p>FREE Shipping on orders over $49 shipped by Amazon</p>
-            </section>
-            <!-- BOX 3 -->
-            <section class="box">
-                <img src="./img/product/featured/f3.jpg" alt="1" class="image">
-                <br>
-                <a href="#">Undated Daily Planner - A5 Undated Planner Hourly 
-                    Planner To Do List Notebook Spiral Appointment Planner, PVC 
-                    Hardcover, Elastic Closure, Inner Pocket, 8.2” x 5.9”, Pink</a>
-                <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
-                <p>Get it as soon as <b> Monday, Jan 30 </b></p>
-                <p>FREE Shipping on orders over $49 shipped by Amazon</p>
-            </section>
+           <!-- BOX 1 -->
+           <section class="box">
+            <img src="./img/product/featured/f1.jpg" alt="1" class="image">
+            <br>
+            <a href="#">UtyTrees Undated Daily Planner: 5.7"x8.5" 144 
+                Pages, Daily To Do List Notebook...</a>
+            <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
+            <p>Get it as soon as <b> Monday, Jan 30 </b></p>
+            <p>FREE Shipping on orders over $49 shipped by Amazon</p>
+        </section>
+        <!-- BOX 2 -->
+        <section class="box">
+            <img src="./img/product/featured/f2.jpg" alt="1" class="image">
+            <br>
+            <a href="#">Fitness Tracker Journal for Women, Pink Workout 
+                Notebook (6 x 8 Inches)</a>
+            <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
+            <p>Get it as soon as <b> Monday, Jan 30 </b></p>
+            <p>FREE Shipping on orders over $49 shipped by Amazon</p>
+        </section>
+        <!-- BOX 3 -->
+        <section class="box">
+            <img src="./img/product/featured/f3.jpg" alt="1" class="image">
+            <br>
+            <a href="#">Undated Daily Planner - A5 Undated Planner Hourly 
+                Planner To Do List Notebook...</a>
+            <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
+            <p>Get it as soon as <b> Monday, Jan 30 </b></p>
+            <p>FREE Shipping on orders over $49 shipped by Amazon</p>
+        </section>
 
-            <!-- BOX 4 -->
-            <section class="box">
-                <img src="./img/product/featured/f4.jpg" alt="1" class="image">
-                <br>
-                <a href="#">EPEWIZD Fitness Journal Hardcover 6- Month Workout 
-                    Planner Undated Workout Log Book Home Gym 
-                    Accessories for Women and Man(Green)</a>
-                <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
-                <p>Get it as soon as <b> Monday, Jan 30 </b></p>
-                <p>FREE Shipping on orders over $49 shipped by Amazon</p>
-            </section>
+        <!-- BOX 4 -->
+        <section class="box">
+            <img src="./img/product/featured/f4.jpg" alt="1" class="image">
+            <br>
+            <a href="#">EPEWIZD Fitness Journal Hardcover 6- Month Workout 
+                Planner Undated Workout...</a>
+            <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
+            <p>Get it as soon as <b> Monday, Jan 30 </b></p>
+            <p>FREE Shipping on orders over $49 shipped by Amazon</p>
+        </section>
 
-            <!-- BOX 5 -->
-            <section class="box">
-                <img src="./img/product/featured/f5.jpg" alt="1" class="image">
-                <br>
-                <a href="#">Amazon Basics Daily Planner and Journal - 5.8" x 
-                    8.25", Hard Cover</a>
-                <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
-                <p>Get it as soon as <b> Monday, Jan 30 </b></p>
-                <p>FREE Shipping on orders over $49 shipped by Amazon</p>
-            </section>
-            <!-- BOX 6 -->
-            <section class="box">
-                <img src="./img/product/featured/f6.jpg" alt="1" class="image">
-                <br>
-                <a href="#">Hardcover Fitness Journal Workout Planner for Men & Women - 
-                    A5 Sturdy Workout Log Book to Track Gym & Home Workouts</a>
-                <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
-                <p>Get it as soon as <b> Monday, Jan 30 </b></p>
-                <p>FREE Shipping on orders over $49 shipped by Amazon</p>
-            </section>
+        <!-- BOX 5 -->
+        <section class="box">
+            <img src="./img/product/featured/f5.jpg" alt="1" class="image">
+            <br>
+            <a href="#">Amazon Basics Daily Planner and Journal - 5.8" x 
+                8.25", Hard Cover</a>
+            <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
+            <p>Get it as soon as <b> Monday, Jan 30 </b></p>
+            <p>FREE Shipping on orders over $49 shipped by Amazon</p>
+        </section>
+        <!-- BOX 6 -->
+        <section class="box">
+            <img src="./img/product/featured/f6.jpg" alt="1" class="image">
+            <br>
+            <a href="#">Hardcover Fitness Journal Workout Planner for Men &...</a>
+            <h1 class="h1-pos"> <span class="sml"> &dollar; </span>7.99</h1>
+            <p>Get it as soon as <b> Monday, Jan 30 </b></p>
+            <p>FREE Shipping on orders over $49 shipped by Amazon</p>
+        </section>
             
 
             
@@ -426,4 +465,27 @@
     </main>
     
 </body>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
 </html>
