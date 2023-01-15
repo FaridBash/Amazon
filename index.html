@@ -14,72 +14,73 @@
     <header>
         <nav class="main-navbar">
             <!-- LEFT NAVBAR -->
-            <nav class="left-navbar">
-                <ul>
-                    <li class="small-screen"><i class="fa-solid fa-bars"></i></li>
-                    <li class="white-hover"><img src="./img/amazon-logo-png_167642.png" alt="white logo" class="white-logo "></li>
-                    <li class="deliver white-hover">
-                        <img src="./img/you-are-here-icon-5.jpg" alt="location" class="location big-screen">
-                        <div id="israel" class="big-screen">
-                            <p>Deliver to</p>
-                            <h3>Israel</h3>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <!-- END OF LEFT NAVBAR -->
-            <!-- MID NAVBAR -->
-            <nav class="mid-navbar">
-                <div id="search-bar">
-                    <button class="big-screen">All</button>
-                    <input type="text" id="search-text">
-                    <button id="search"><i class="fa-solid fa-magnifying-glass" ></i></button>
-                </div>
-            </nav>
-            
-            <!-- END OF RIGHT NAVBAR -->
-            <!-- RIGHT NAVBAR -->
-            <nav class="right-navbar">
+            <nav class="first-nav">
 
-                <ul>
-                    <li id="lang" class="white-hover">
-                        <img src="./img/en.png" alt="" id="en" class="big-screen">
-                        <h3 class="big-screen">EN</h3>
-                    </li>
-                    <li id="sign-in" class="white-hover">
-                        <p class="big-screen">Hello, sign in</p>
-                        <h3 class="big-screen">Account & Lists</h3>
-                    </li>
-                    <li id="returns" class="white-hover">
-                        <p class="big-screen">Returns</p>
-                        <h3 class="big-screen">& Orders</h3>
-                    </li>
-                    <li class="small-screen"><h3>Sign in ></h3></li>
-                    <li class="small-screen"><i class="fa-regular fa-user"></i></li>
-                    <li id="cart0" class="white-hover">
-                        <h4>0</h4>
-                        <div id="cart">
-                            <img src="./img/cart.png" alt="" id="shop-cart">
-                            <h3>Cart</h3>
-                        </div>
-                    </li>
-                </ul>
+                <nav class="left-navbar">
+                    <ul>
+                        <li class="small-screen"><i class="fa-solid fa-bars"></i></li>
+                        <li class="white-hover"><img src="./img/amazon-logo-png_167642.png" alt="white logo" class="white-logo"></li>
+                        <li class="deliver white-hover">
+                            <img src="./img/you-are-here-icon-5.jpg" alt="location" class="location big-screen">
+                            <div id="israel" class="big-screen">
+                                <p>Deliver to</p>
+                                <h3>Israel</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- END OF LEFT NAVBAR -->
+                <!-- MID NAVBAR -->
+                <nav class="mid-navbar">
+                        <button class="big-screen">All</button>
+                        <input type="text" id="search-text">
+                        <button id="search"><i class="fa-solid fa-magnifying-glass" ></i></button>   
+                </nav>
+                
+                <!-- END OF RIGHT NAVBAR -->
+                <!-- RIGHT NAVBAR -->
+                <nav class="right-navbar">
+                    
+                    <ul>
+                        <li id="lang" class="white-hover">
+                            <img src="./img/en.png" alt="" id="en" class="big-screen">
+                            <h3 class="big-screen">EN</h3>
+                        </li>
+                        <li id="sign-in" class="white-hover">
+                            <p class="big-screen">Hello, sign in</p>
+                            <h3 class="big-screen">Account & Lists</h3>
+                        </li>
+                        <li id="returns" class="white-hover">
+                            <p class="big-screen">Returns</p>
+                            <h3 class="big-screen">& Orders</h3>
+                        </li>
+                        <li class="small-screen"><h3>Sign in ></h3></li>
+                        <li class="small-screen"><i class="fa-regular fa-user"></i></li>
+                        <li id="cart0" class="white-hover">
+                            <h4>0</h4>
+                            <div id="cart">
+                                <img src="./img/cart.png" alt="" id="shop-cart">
+                                <h3>Cart</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </nav>
-            <!-- END OF RIGHT NAVBAR -->
-        </nav>
-
-        <!-- SECOND NAVBAR -->
-        <nav class="second-nav big-screen">
-            <ul>
-                <li id="all" class="white-hover">=All</li>
-                <li class="white-hover">Today's Deal</li>
-                <li class="white-hover">Customer Service</li>
-                <li class="white-hover">Gift Cards</li>
-                <li class="white-hover">Registry</li>
-                <li class="white-hover">Sell</li>
-            </ul>
-            <h3 class="white-hover">Shop great deals now</h3>
-        </nav>
+                <!-- END OF RIGHT NAVBAR -->
+                
+                
+                <!-- SECOND NAVBAR -->
+                <nav class="second-nav big-screen">
+                    <ul>
+                        <li id="all" class="white-hover">=All</li>
+                        <li class="white-hover">Today's Deal</li>
+                        <li class="white-hover">Customer Service</li>
+                        <li class="white-hover">Gift Cards</li>
+                        <li class="white-hover">Registry</li>
+                        <li class="white-hover">Sell</li>
+                    </ul>
+                    <h3 class="white-hover">Shop great deals now</h3>
+                </nav>
         <!-- SECOND NAVBAR FINISHED-->
 
         <!-- THIRD NAVBAR -->
@@ -98,15 +99,16 @@
         </nav>
 
         <!-- FOURTH NAVBAR -->
-        <nav class="fourth-nav small-screen">
+        <!-- <nav class="fourth-nav small-screen">
             <i class="fa-solid fa-location-dot"></i>
                 <div id="israel">
                     <p>Deliver to Israel</p>
                     
                 </div>
-        </nav>
-
+        </nav> -->
+    </nav>
     </header>
+
 
     <main>
 
@@ -463,29 +465,10 @@
         </section>
 
     </main>
-    
+
+
 </body>
 
-<script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
+
 
 </html>
