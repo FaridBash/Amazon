@@ -27,7 +27,7 @@ header{
 }
 .left-navbar{
     grid-area: left;
-    /* width: 100%; */
+    width: 100%;
     /* height: 50%; */
     
 }
@@ -46,11 +46,16 @@ header{
 }
 
 .right-navbar{
-    width: 110%;
-    padding-right: 2rem;
+    width: 100%;
+    /* padding-right: 2rem; */
+}
+.right-navbar ul li{
+    width: fit-content;
+    /* font-size: 20px; */
 }
 .mid-navbar{
     grid-area: mid;
+    width: 100%;
 }
 .mid-navbar input{
     width: 45vh;
@@ -183,8 +188,12 @@ main .product .image-col img{
 }
 
 
+.featured{
+    display: flex;
+    flex-direction: column;
+}
 
-
+.fea
 /* Slider ====================================================*/
 
 * {box-sizing: border-box}
